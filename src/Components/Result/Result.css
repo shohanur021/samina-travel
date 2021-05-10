@@ -1,0 +1,91 @@
+.pick-and-map-container{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+}
+
+.pick-container{
+    margin : 5px 100px 20px 50px;
+    background-color:rgb(197, 187, 187);
+    width: 380px;
+    padding: 10px 40px ;
+    border-radius:5px
+}
+
+.pick-container input{
+    display: block;
+    padding:5px;
+    border:1px solid gray;
+    border-radius:5px;
+    width:300px
+}
+.pick-container label{
+    display: block;
+    font-size:13px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.submitPick{
+   font-weight: 600;
+   background-color:rgba(214, 90, 18, 0.733) ;
+   color:rgba(255, 255, 255, 0.973);
+   margin-top: 25px !important;
+   margin-bottom: 20px !important;
+}
+.information{
+    background-color:white;
+    width: 380px;
+    margin : 5px 100px 25px 50px;
+    padding-top:20px;
+    height:200px;
+    box-shadow: 1px 2px 3px #ffffff;
+}
+
+.information ul {
+    max-width: 400px;
+    margin: 0 auto;
+    list-style-type:none;
+    counter-reset: steps;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .information ul li {
+    padding: 0 0 40px 35px;
+    position: relative;
+    margin: 0;
+  }
+  .information ul li:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: counter(steps);
+    counter-increment: steps;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    line-height: 24px;
+    background: rgb(0, 0, 0);
+  }
+  .information ul li:before {
+    position: absolute;
+    left: 13px;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    border-left: 2px solid #000;
+  }
+  .information ul li:last-of-type:before {
+    border: none;
+  }
+  .information p{
+      text-align: center;
+  }
+  .information p span{
+    color:rgb(151, 25, 209);
+}
